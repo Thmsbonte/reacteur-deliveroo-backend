@@ -16,6 +16,6 @@ app.all("*", (req, res) => {
   });
 });
 
-app.listen("3100", () => {
+app.listen(process.env.PORT, () => {
   console.log("Server has started");
 });
